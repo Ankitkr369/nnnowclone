@@ -41,6 +41,8 @@ price: " Rs 2599 ",
 button:"Buy Now",
 },]
 
+var cartdata=JSON.parse(localStorage.getItem("cart"))||[]
+
 mendata.map(function(elem){
 
     var box=document.createElement("div");
@@ -78,11 +80,11 @@ mendata.map(function(elem){
 document.querySelector("#pro2").append(box);
 
 });
-var cartdata=JSON.parse(localStorage.getItem("cart"))||[]
 function addtocart(elem){
-    console.log(elem);
-    cartdata.push(elem);
+
+    console.log(elem)
+    cartdata.push(elem)
     localStorage.setItem("cart",JSON.stringify(cartdata))
-alert("item-added");
+    alert("Item Added TO Cart")
 
 }
