@@ -208,7 +208,7 @@ width: 90%;margin: auto;
     color: white;
 }
 
-@media only screen and (max-width: 800px) and (min-width:415px) {
+@media only screen and (max-width: 800px) and (min-width:400px) {
 
  .im4{
         flex-direction: column;
