@@ -1,0 +1,336 @@
+
+
+#menu{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: #F3F3F3;
+    margin-top: -5px;
+}
+#menu>div{
+    
+    margin: auto;
+    width: auto;
+    margin-top: 15px;
+    
+}
+.one{
+   
+    color: purple;
+    font-size: 13px;
+    transform: rotate(20deg);
+    padding-top: 10px; 
+   
+}
+.two{
+    color: yellow;
+    font-size: 13px;
+    transform: rotate(20deg);
+    padding-top: 10px; 
+}
+.three{
+    color: rgb(241, 111, 133);
+    font-size: 13px;
+    transform: rotate(20deg);
+    padding-top: 10px; 
+}
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .men{
+        
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .fa-solid{
+        color: #EB7ABB;
+    }
+#menu2{
+
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+
+
+}
+#menu2>div{
+   width: auto;
+    margin: auto;
+   
+}
+
+
+
+#search{
+    border: 0px;
+    outline: none;
+
+
+}
+#menu2>div>img{
+    margin-top: -20px;
+    width: 100%;
+    margin-left: 15px;
+}
+#menu2>div:nth-child(1){
+    margin-left: 30px;
+    width: 18%;
+  
+}
+
+
+
+
+    #nav{
+        display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    }
+    #nav>div{
+        margin: auto;
+    width: auto;
+    }
+    #three{
+        display: flex;
+        flex-wrap: wrap;
+ gap: 20px;
+    }
+    #three>div{
+        margin: auto;
+    }
+    .hr1{
+        color: #ffffff;
+        width:93%;
+        height: -40px;
+    }
+
+    .container{
+        position: absolute;
+    }
+    
+.popup{
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+    .popup-content{
+        height: 100%;
+        width: 400px;
+background: #fff;
+padding: 20px;
+border-radius: 5px;
+position: relative;
+    }
+
+  .input{
+      margin: 20px auto;
+      display: block;
+      width: 50%;
+      padding: 8px;
+      border: 1 px solid gray;
+      width: 90%;
+      margin-top: -10px;
+  }  
+
+  .close{
+      position: absolute;
+      top: 15px;
+      right: 40px;
+      
+     font-size: 30px;
+      border-radius: 50%;
+     
+  }
+  .bitu{
+      width: 90%;
+      height: 40px;
+      background-color:#E72E98;
+      color: white;
+      font-weight: bold;
+      margin-top: 20px;
+      border: none;
+      font-size: 22px;
+      font-style: bold;
+  }
+  .bit1{
+
+    width: 95%;
+    height: 40px;
+    background-color:#4585F4;
+    color: white;
+    font-weight: bold;
+    margin-top: 40px;
+    border: none;
+    font-size: 16px;
+    font-style: bold;
+    box-sizing: border-box;
+    
+}
+.bit2{
+    width: 95%;
+    height: 40px;
+    background-color:#3B5998;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    border: none;
+    font-size: 16px;
+    font-style: bold;
+}
+.fa-brands{
+color: white;
+margin-right: 60px;
+font-size: 20px;
+}
+#button{
+    margin-left: 90px;
+}
+.google{
+    height: 20px;
+    width: 20px;
+    margin-right:70px ;
+  
+}
+.paratr{
+    
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+}
+.col{
+    color: #E72E98;
+    text-decoration: underline;
+}
+.popup1{
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.popup-content1{
+    height: 100%;
+    width: 400px;
+background: #fff;
+padding: 20px;
+border-radius: 5px;
+position: relative;
+}
+.input1{
+    margin: 20px auto;
+    display: block;
+    width: 50%;
+    padding: 8px;
+    border: 1 px solid gray;
+    width: 90%;
+    margin-top: -10px;
+}  
+.close1{
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    
+   font-size: 30px;
+    border-radius: 50%;
+   
+}
+.pk1{
+    text-align: left;
+    margin-left: 10px;
+    color: #656565;
+}
+.popup2{
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.popup-content2{
+    height: 100%;
+    width: 400px;
+background: #fff;
+padding: 20px;
+border-radius: 5px;
+position: relative;
+}
+.input2{
+    margin: 20px auto;
+    display: block;
+    width: 50%;
+    padding: 8px;
+    border: 1 px solid gray;
+    width: 90%;
+    margin-top: -10px;
+} .close2{
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    
+   font-size: 30px;
+    border-radius: 50%;
+   
+}
+.bitu1{
+    width: 90%;
+    height: 40px;
+    background-color:#E72E98;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    border: none;
+    font-size: 22px;
+    font-style: bold;
+}
+#slil1{
+   margin-top: 50px;
+    width: 90%;margin: auto;
+}
+#slil1>div{
+    width: 100%;
+}
+#slil1 .owl-dots{
+    margin-top: 10px;
+}
+@media only screen and (max-width: 400px) and (min-width:50px) {
+#menu{
+    flex-direction: column;
+}
+.men{
+    flex-direction: column;
+}
+#menu2{
+    flex-direction: column;
+}
+#nav{
+    flex-direction: column;
+}
+}

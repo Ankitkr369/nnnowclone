@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav{
+            display: flex;
+            justify-content: space-between;
+        margin: auto;
+        width: 90%;
+        margin-top: -10px;
+        }
+        #logo{
+            width: 100%;
+            height: 50px;
+        }
+        #bagh{
+            background-color: #0092DF;
+        margin-top: -20px;
+        }
+        #bagh>h2{
+            color: white;
+            margin-left: 60px;
+            padding: 5px;
+            font-weight: bold;
+            
+        }
+        #pro2{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .bitu36{
+            width: 200px;
+    height: 30px;
+    display: block;
+    margin-left: 80px;
+    border: none;
+    background-color: #E72E98;
+    color: white; 
+    margin-top: 10px;
+        }
+        .bitu369{
+     text-align: center;
+ }
+ 
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div><img id="logo" src="https://cdn02.nnnow.com/web-images/master/navtree_metaData/59b2425ae4b0d70964ee66e0/1505806763887/12NNNOWLOGODESKTOP.png"/></div>
+        <div><h3><i class="fa-solid fa-circle-user"></i> Ankit Kumar</h3></div>
+    </div>
+    <div id="bagh"><h2>MY BAG</h2></div>
+<div id="pro2">
+
+
+</div>
+
+</body>
+</html>
+<script
+        
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"></script>
+    
+   
+
+
+    <script>
+
+var cartdta=JSON.parse(localStorage.getItem("cart"))
+console.log(cartdta)
+
+
+cartdta.map(function(elem,index){
+
+    var box=document.createElement("div");
+     
+    var img=document.createElement("img");
+    img.src=elem.image_url;
+     
+    var name=document.createElement("p");
+    name.setAttribute("class","bitu369")
+    name.textContent=elem.title;
+
+    var name1=document.createElement("p");
+    name1.setAttribute("class","bitu369")
+    name1.textContent=elem.title2;
+
+    var meta=document.createElement("p");
+    meta.setAttribute("class","bitu369")
+    meta.textContent=elem.meta;
+
+    var price=document.createElement("p");
+    price.setAttribute("class","bitu369")
+    meta.textContent=elem.price;
+
+    var btn=document.createElement("button")
+    btn.setAttribute("class","bitu36")
+    btn.innerText="Buy Now";
+    var btn1=document.createElement("button")
+    btn1.setAttribute("class","bitu36")
+    btn1.innerText="Remove";
+
+    btn1.addEventListener("click",function(){
+        removeitem(elem,index)
+    })
+
+
+    box.append(img,name,name1,meta,price,btn,btn1)
+
+document.querySelector("#pro2").append(box);
+
+});
+ 
+function removeitem(elem,index)
+{
+    console.log("yes")
+    cartdta.splice(index,1)
+    localStorage.setItem("cart",JSON.stringify(cartdta))
+    window.location.reload()
+}
+
+    </script>
