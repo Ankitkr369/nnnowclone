@@ -66,16 +66,13 @@
     src="https://kit.fontawesome.com/24c494a6b6.js"
     crossorigin="anonymous"></script>
     
-   
+ <script>
+
+var cartdata=JSON.parse(localStorage.getItem("cart"))
+console.log(cartdata)
 
 
-    <script>
-
-var cartdta=JSON.parse(localStorage.getItem("cart"))
-console.log(cartdta)
-
-
-cartdta.map(function(elem,index){
+cartdata.map(function(elem,index){
 
     var box=document.createElement("div");
      
@@ -103,7 +100,7 @@ cartdta.map(function(elem,index){
     btn.innerText="Buy Now";
     var btn1=document.createElement("button")
     btn1.setAttribute("class","bitu36")
-    btn1.innerText="Remove";
+    btn1.innerText="Remove"
 
     btn1.addEventListener("click",function(){
         removeitem(elem,index)
@@ -115,13 +112,12 @@ cartdta.map(function(elem,index){
 document.querySelector("#pro2").append(box);
 
 });
- 
-function removeitem(elem,index)
-{
-    console.log("yes")
-    cartdta.splice(index,1)
-    localStorage.setItem("cart",JSON.stringify(cartdta))
-    window.location.reload()
+function removeitem(elem,index){
+    console.log(elem,index)
+    cartdata.splice(index,1)
+    console.log(cartdata)
+    localStorage.setItem("cart",JSON.stringify(cartdata))
+window.location.reload()
 }
+    </script>   
 
-    </script>
